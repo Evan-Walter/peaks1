@@ -25,7 +25,7 @@ for i in range(len(dataPoints)):
     # Criteria for a peak:
     # 110% above the average of its containing chunk
     # Greater than each point on the left and right
-    if (dataPoints[i] >= 1.1 * avg and dataPoints[i] >= dataPoints[i - 1]
+    if (dataPoints[i] >= 1.1*avg and dataPoints[i] >= dataPoints[i - 1]
             and dataPoints[i] >= dataPoints[i + 1]):
         peaks.append(dataPoints[i])
 
